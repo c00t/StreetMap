@@ -7,6 +7,8 @@ namespace UnrealBuildTool.Rules
         public StreetMapRuntime(ReadOnlyTargetRules Target)
 			: base(Target)
 		{
+		            PCHUsage = ModuleRules.PCHUsageMode.NoSharedPCHs;
+		            PrivatePCHHeaderFile = "StreetMapRuntime.h";
 			PrivateDependencyModuleNames.AddRange(
 				new string[] {
                     "Core",
